@@ -1,0 +1,11 @@
+package sample
+
+import (
+    "io"
+
+    "golang.org/x/net/context"
+)
+
+type Example interface {
+    Init(ctx context.Context, number int) (int, float32, string, bool, io.Writer, error)
+}
